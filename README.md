@@ -12,11 +12,14 @@
 
 ------
 ## PLEASE READ!
-Nadir-rework is a fork of the Nadir project, updated for newer Minecraft versions.
-The original project was abandoned and is no longer maintained.
+Nadir-rework is a community-maintained fork of the Nadir project, updated to support newer versions.
 
-This fork is not based on the official Nadir, but rather on a community fork: [Nadir by MeiaQuatru](https://github.com/MeiaQuatru/Nadir).
-However, that version had some bugs — this project simply aims to fix them :)
+The original project has been abandoned and is no longer maintained.
+
+This fork is not based on the official Nadir, but rather on another community fork — [Nadir by MeiaQuatru](https://github.com/MeiaQuatru/Nadir).
+That version contained a few bugs, so this rework simply aims to fix those issues and improve compatibility.
+
+All credit for the original concept and design goes to the original creators and contributors.
 ------
 
 Inspired by the [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) mod, **Nadir** aims to **reinvent the enchanting system** by making it more immersive and customizable outside of just adding more Bookshelves.
