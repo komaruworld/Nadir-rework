@@ -1,0 +1,34 @@
+{
+	"parent": "nadir:events/root",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:value_check",
+						"value": {
+							"type": "minecraft:score",
+							"target": {
+								"type": "minecraft:fixed",
+								"name": "#nadir.config"
+							},
+							"score": "nadir.config.enable_new_enchanting",
+							"scale": 1
+						},
+						"range": 1
+					},
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": "#nadir:enchanting_table"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "nadir:enchanting_table/place/placed"
+	}
+}

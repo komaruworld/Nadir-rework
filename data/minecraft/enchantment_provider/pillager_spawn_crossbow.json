@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:by_cost",
+	"enchantments": [
+		"minecraft:piercing",
+		"minecraft:multishot",
+		"minecraft:power",
+		"minecraft:flame"
+	],
+	"cost": {
+		"type": "minecraft:uniform",
+		"min_inclusive": 1,
+		"max_inclusive": 4
+	}
+}

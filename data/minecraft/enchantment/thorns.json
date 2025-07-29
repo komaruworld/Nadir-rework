@@ -1,0 +1,58 @@
+{
+	"description": {
+		"translate": "enchantment.minecraft.thorns"
+	},
+	"supported_items": "#nadir:enchantable/chest_and_animal",
+	"weight": 1,
+	"max_level": 3,
+	"min_cost": {
+		"base": 10,
+		"per_level_above_first": 20
+	},
+	"max_cost": {
+		"base": 60,
+		"per_level_above_first": 20
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"any"
+	],
+	"effects": {
+		"minecraft:post_attack": [
+			{
+				"enchanted": "victim",
+				"affected": "attacker",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:damage_entity",
+							"damage_type": "minecraft:thorns",
+							"min_damage": {
+								"type": "minecraft:linear",
+								"base": 1,
+								"per_level_above_first": 1
+							},
+							"max_damage": {
+								"type": "minecraft:linear",
+								"base": 3,
+								"per_level_above_first": 1
+							}
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:random_chance",
+					"chance": {
+						"type": "minecraft:enchantment_level",
+						"amount": {
+							"type": "minecraft:linear",
+							"base": 0.35,
+							"per_level_above_first": 0.15
+						}
+					}
+				}
+			}
+		]
+	}
+}

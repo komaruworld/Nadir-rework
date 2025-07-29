@@ -1,0 +1,37 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.bulk_curse",
+		"fallback": "Curse of Bulk"
+	},
+	"supported_items": "#minecraft:enchantable/armor",
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 20,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 65,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"id": "nadir:enchantment.bulk_curse",
+				"attribute": "minecraft:movement_speed",
+				"amount": -0.15,
+				"operation": "add_multiplied_total"
+			},
+			{
+				"id": "nadir:enchantment.bulk_curse",
+				"attribute": "minecraft:armor",
+				"amount": 1,
+				"operation": "add_value"
+			}
+		]
+	}
+}

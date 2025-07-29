@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:bookshelf",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.nadir.the_basics.title",
+			"fallback": "The Basics"
+		},
+		"description": {
+			"translate": "advancements.nadir.the_basics.description",
+			"fallback": "Enchant an item at level 30"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "nadir:root",
+	"criteria": {
+		"enchant": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements": [
+		[
+			"enchant"
+		]
+	],
+	"sends_telemetry_event": false
+}

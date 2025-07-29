@@ -1,0 +1,34 @@
+{
+	"description": {
+		"translate": "enchantment.minecraft.mending"
+	},
+	"supported_items": "#minecraft:enchantable/durability",
+	"weight": 2,
+	"max_level": 4,
+	"min_cost": {
+		"base": 5,
+		"per_level_above_first": 20
+	},
+	"max_cost": {
+		"base": 19,
+		"per_level_above_first": 20
+	},
+	"anvil_cost": 3,
+	"slots": [
+		"any"
+	],
+	"effects": {
+		"minecraft:repair_with_xp": [
+			{
+				"effect": {
+					"type": "minecraft:multiply",
+					"factor": {
+						"type": "minecraft:linear",
+						"base": 0.5,
+						"per_level_above_first": 0.5
+					}
+				}
+			}
+		]
+	}
+}

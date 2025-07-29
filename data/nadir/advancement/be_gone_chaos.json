@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:honeycomb_block",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.nadir.be_gone_chaos.title",
+			"fallback": "Be Gone Chaos!"
+		},
+		"description": {
+			"translate": "advancements.nadir.be_gone_chaos.description",
+			"fallback": "Enchant with 100 Rectification"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "nadir:flux_manipulator",
+	"criteria": {
+		"enchant": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements": [
+		[
+			"enchant"
+		]
+	],
+	"sends_telemetry_event": false
+}

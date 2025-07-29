@@ -1,0 +1,101 @@
+{
+	"description": {
+		"translate": "enchantment.minecraft.projectile_protection"
+	},
+	"supported_items": "#nadir:enchantable/armor_and_animal",
+	"weight": 3,
+	"max_level": 4,
+	"min_cost": {
+		"base": 3,
+		"per_level_above_first": 12
+	},
+	"max_cost": {
+		"base": 9,
+		"per_level_above_first": 13
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:damage_protection": [
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": 0.75,
+						"per_level_above_first": 0.75
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:inverted",
+							"term": {
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type": "#nadir:horses"
+								}
+							}
+						},
+						{
+							"condition": "minecraft:damage_source_properties",
+							"predicate": {
+								"tags": [
+									{
+										"id": "minecraft:is_projectile",
+										"expected": true
+									},
+									{
+										"id": "minecraft:bypasses_invulnerability",
+										"expected": false
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": 3,
+						"per_level_above_first": 3
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type": "#nadir:horses"
+							}
+						},
+						{
+							"condition": "minecraft:damage_source_properties",
+							"predicate": {
+								"tags": [
+									{
+										"id": "minecraft:is_projectile",
+										"expected": true
+									},
+									{
+										"id": "minecraft:bypasses_invulnerability",
+										"expected": false
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

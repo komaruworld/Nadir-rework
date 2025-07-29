@@ -1,0 +1,7 @@
+{
+	"values": [
+		"minecraft:bookshelf",
+		"minecraft:lectern",
+		{"id": "#c:bookshelves","required": false}
+	]
+}

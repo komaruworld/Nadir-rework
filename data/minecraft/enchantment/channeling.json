@@ -1,0 +1,220 @@
+{
+	"description": {
+		"translate": "enchantment.minecraft.channeling"
+	},
+	"supported_items": "#nadir:enchantable/channeling",
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:hit_block": [
+			{
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:summon_entity",
+							"entity": "minecraft:lightning_bolt"
+						},
+						{
+							"type": "minecraft:play_sound",
+							"sound": "minecraft:item.trident.thunder",
+							"volume": 5,
+							"pitch": 1
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:weather_check",
+							"thundering": true
+						},
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type": "minecraft:trident",
+								"location": {
+									"can_see_sky": true,
+									"block": {
+										"blocks": "minecraft:lightning_rod"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:summon_entity",
+							"entity": "minecraft:lightning_bolt"
+						},
+						{
+							"type": "minecraft:play_sound",
+							"sound": "minecraft:item.trident.thunder",
+							"volume": 5,
+							"pitch": 1
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:weather_check",
+							"thundering": true
+						},
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "direct_attacker",
+							"predicate": {
+								"movement": {
+									"fall_distance": {
+										"min": 1.5
+									}
+								},
+								"slots": {
+									"weapon.mainhand": {
+										"items": "minecraft:mace"
+									}
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:summon_entity",
+							"entity": "minecraft:lightning_bolt"
+						},
+						{
+							"type": "minecraft:play_sound",
+							"sound": "minecraft:item.trident.thunder",
+							"volume": 5,
+							"pitch": 1
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:weather_check",
+							"thundering": true
+						},
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"location": {
+									"can_see_sky": true
+								}
+							}
+						},
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "direct_attacker",
+							"predicate": {
+								"type": "minecraft:trident"
+							}
+						}
+					]
+				}
+			}
+		],
+		"minecraft:damage_immunity": [
+			{
+				"effect": {},
+				"requirements": {
+					"condition": "minecraft:damage_source_properties",
+					"predicate": {
+						"tags": [
+							{
+								"id": "minecraft:is_lightning",
+								"expected": true
+							},
+							{
+								"id": "minecraft:bypasses_invulnerability",
+								"expected": false
+							}
+						]
+					}
+				}
+			}
+		],
+		"minecraft:tick": [
+			{
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:electric_spark"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "in_bounding_box"
+					},
+					"horizontal_velocity": {
+						"base": {
+							"type": "minecraft:uniform",
+							"min_inclusive": -1,
+							"max_exclusive": 1
+						}
+					},
+					"vertical_velocity": {
+						"base": {
+							"type": "minecraft:uniform",
+							"min_inclusive": -1,
+							"max_exclusive": 1
+						}
+					},
+					"speed": {
+						"type": "minecraft:uniform",
+						"min_inclusive": 0.2,
+						"max_exclusive": 0.6
+					}
+				},
+				"requirements": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"can_see_sky": true
+						}
+					},
+					{
+						"condition": "minecraft:weather_check",
+						"thundering": true
+					}
+				]
+			}
+		]
+	}
+}

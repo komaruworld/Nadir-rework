@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:wither_skeleton_skull",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.nadir.gambler.title",
+			"fallback": "Gambler"
+		},
+		"description": {
+			"translate": "advancements.nadir.gambler.description",
+			"fallback": "Enchant at 100 Quanta"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "nadir:flux_manipulator",
+	"criteria": {
+		"enchant": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements": [
+		[
+			"enchant"
+		]
+	],
+	"sends_telemetry_event": false
+}

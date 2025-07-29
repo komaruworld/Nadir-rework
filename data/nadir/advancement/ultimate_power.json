@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:enchanting_table",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.nadir.ultimate_power.title",
+			"fallback": "Ultimate Power"
+		},
+		"description": {
+			"translate": "advancements.nadir.ultimate_power.description",
+			"fallback": "Enchant with all stats at maximum"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "nadir:root",
+	"criteria": {
+		"enchant": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements": [
+		[
+			"enchant"
+		]
+	],
+	"sends_telemetry_event": false
+}

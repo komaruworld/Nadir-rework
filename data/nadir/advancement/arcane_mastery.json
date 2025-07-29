@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:bookshelf",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.nadir.arcane_mastery.title",
+			"fallback": "Arcane Mastery"
+		},
+		"description": {
+			"translate": "advancements.nadir.arcane_mastery.description",
+			"fallback": "Enchant an item at level 45"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "nadir:the_basics",
+	"criteria": {
+		"enchant": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements": [
+		[
+			"enchant"
+		]
+	],
+	"sends_telemetry_event": false
+}

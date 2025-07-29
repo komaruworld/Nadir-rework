@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:amethyst_block",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.nadir.flux_manipulator.title",
+			"fallback": "Flux Manipulator"
+		},
+		"description": {
+			"translate": "advancements.nadir.flux_manipulator.description",
+			"fallback": "Enchant with at least 30 of both Quanta and Rectification"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "nadir:root",
+	"criteria": {
+		"enchant": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements": [
+		[
+			"enchant"
+		]
+	],
+	"sends_telemetry_event": false
+}

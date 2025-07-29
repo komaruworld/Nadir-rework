@@ -1,0 +1,43 @@
+{
+	"description": {
+		"translate": "enchantment.minecraft.infinity"
+	},
+	"supported_items": "#nadir:enchantable/ranged",
+	"weight": 1,
+	"max_level": 3,
+	"min_cost": {
+		"base": 12,
+		"per_level_above_first": 13
+	},
+	"max_cost": {
+		"base": 31,
+		"per_level_above_first": 12
+	},
+	"anvil_cost": 4,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:ammo_use": [
+			{
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:remove_binomial",
+							"chance": {
+								"type": "minecraft:fraction",
+								"numerator": {
+									"type": "minecraft:linear",
+									"base": 24,
+									"per_level_above_first": 12
+								},
+								"denominator": 100
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

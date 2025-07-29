@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:bookshelf",
+			"count": 1,
+			"components": {
+				"minecraft:enchantment_glint_override": true
+			}
+		},
+		"title": {
+			"translate": "advancements.nadir.experiments.title",
+			"fallback": "Experiments"
+		},
+		"description": {
+			"translate": "advancements.nadir.experiments.description",
+			"fallback": "Enchant with at least 10 of Eterna, Quanta and Arcana"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "nadir:root",
+	"criteria": {
+		"enchant": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"requirements": [
+		[
+			"enchant"
+		]
+	],
+	"sends_telemetry_event": false
+}

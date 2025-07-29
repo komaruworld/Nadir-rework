@@ -1,0 +1,35 @@
+{
+	"description": {
+		"translate": "enchantment.minecraft.density"
+	},
+	"exclusive_set": "#minecraft:exclusive_set/damage",
+	"supported_items": "#minecraft:enchantable/mace",
+	"weight": 7,
+	"max_level": 3,
+	"min_cost": {
+		"base": 8,
+		"per_level_above_first": 8
+	},
+	"max_cost": {
+		"base": 25,
+		"per_level_above_first": 12
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:smash_damage_per_fallen_block": [
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": 0.5,
+						"per_level_above_first": 0.5
+					}
+				}
+			}
+		]
+	}
+}

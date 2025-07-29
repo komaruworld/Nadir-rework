@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:enchanting_table",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.story.enchant_item.title"
+		},
+		"description": {
+			"translate": "advancements.nadir.enchant_item.description",
+			"fallback": "Craft an Enchanting Table"
+		},
+		"frame": "goal"
+	},
+	"parent": "minecraft:story/mine_diamond",
+	"criteria": {
+		"craft_enchanting_table": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#nadir:enchanting_table"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"craft_enchanting_table"
+		]
+	],
+	"sends_telemetry_event": true
+}

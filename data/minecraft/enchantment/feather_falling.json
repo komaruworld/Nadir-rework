@@ -1,0 +1,44 @@
+{
+	"description": {
+		"translate": "enchantment.minecraft.feather_falling"
+	},
+	"supported_items": "#nadir:enchantable/foot_and_animal",
+	"weight": 5,
+	"max_level": 4,
+	"min_cost": {
+		"base": 5,
+		"per_level_above_first": 13
+	},
+	"max_cost": {
+		"base": 11,
+		"per_level_above_first": 16
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"id": "minecraft:enchantment.feather_falling",
+				"attribute": "minecraft:fall_damage_multiplier",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": -0.1,
+					"per_level_above_first": -0.05
+				},
+				"operation": "add_multiplied_base"
+			},
+			{
+				"id": "minecraft:enchantment.feather_falling",
+				"attribute": "minecraft:safe_fall_distance",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 3,
+					"per_level_above_first": 2
+				},
+				"operation": "add_value"
+			}
+		]
+	}
+}

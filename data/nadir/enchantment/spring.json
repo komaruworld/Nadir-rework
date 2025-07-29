@@ -1,0 +1,48 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.spring",
+		"fallback": "Spring"
+	},
+	"exclusive_set": [
+		"minecraft:feather_falling"
+	],
+	"supported_items": "#nadir:enchantable/foot_and_animal",
+	"weight": 5,
+	"max_level": 4,
+	"min_cost": {
+		"base": 5,
+		"per_level_above_first": 13
+	},
+	"max_cost": {
+		"base": 11,
+		"per_level_above_first": 16
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"attribute": "minecraft:safe_fall_distance",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 1.5,
+					"per_level_above_first": 0.5
+				},
+				"operation": "add_value",
+				"id": "nadir:enchantment.spring"
+			},
+			{
+				"attribute": "minecraft:jump_strength",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 0.12,
+					"per_level_above_first": 0.06
+				},
+				"operation": "add_value",
+				"id": "nadir:enchantment.spring"
+			}
+		]
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"values": [
+		"#minecraft:non_treasure",
+		"#minecraft:curse",
+		"minecraft:frost_walker",
+		"minecraft:multishot",
+		"nadir:magma_walker",
+		"nadir:step",
+		"nadir:sharpshooter",
+		"nadir:lucky"
+	]
+}
