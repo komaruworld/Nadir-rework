@@ -5,7 +5,7 @@
 
 -------
 
-[Nadir source code](https://github.com/kohy-creates/Nadir) | [Nadir-rework source code](https://github.com/komaruworld/Nadir-rework)
+[Nadir source code](https://github.com/kohy-creates/Nadir) | [Nadir-rework source code](https://github.com/komaruworld/Nadir-rework) | [Nadir Discord server](https://discord.gg/kohara)
 
 -------
 <br>
