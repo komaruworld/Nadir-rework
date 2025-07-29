@@ -5,7 +5,7 @@
 
 -------
 
-[Nadir source code](https://github.com/kohy-creates/Nadir) | [Nadir-rework source code](https://github.com/komaruworld/Nadir-rework) | [Nadir Discord server](https://discord.gg/kohara)
+[Nadir source code](https://github.com/kohy-creates/Nadir) | [Nadir-rework source code](https://github.com/komaruworld/Nadir-rework) | [Nadir Discord server](https://discord.gg/kohara) | 1.21.4-1.21.7
 
 -------
 <br>
@@ -14,7 +14,7 @@
 ## PLEASE READ!
 
 Nadir-rework This is just a fork of Nadir only for new versions because the original project was abandoned and is no longer updated
-
+this project is not based on the official Nadir it is based on the fork [Nadir by MeiaQuatru](https://github.com/MeiaQuatru/Nadir) but there were bugs and this project just fixes them :)
 ------
 
 Inspired by the [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) mod, **Nadir** aims to **reinvent the enchanting system** by making it more immersive and customizable outside of just adding more Bookshelves.
