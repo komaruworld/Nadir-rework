@@ -14,7 +14,7 @@
 
 Nadir-rework This is just a fork of Nadir only for new versions because the original project was abandoned and is no longer updated
 
-
+------
 
 Inspired by the [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) mod, **Nadir** aims to **reinvent the enchanting system** by making it more immersive and customizable outside of just adding more Bookshelves.
 
