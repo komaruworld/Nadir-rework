@@ -1,49 +1,47 @@
 {
-	"description": {
-		"translate": "enchantment.nadir.enlargement_curse",
-		"fallback": "Curse of Enlargement"
-	},
-	"supported_items": "#nadir:enchantable/tools_and_weapons",
-	"weight": 1,
-	"max_level": 1,
-	"min_cost": {
-		"base": 25,
-		"per_level_above_first": 0
-	},
-	"max_cost": {
-		"base": 50,
-		"per_level_above_first": 0
-	},
-	"anvil_cost": 8,
-	"slots": [
-		"mainhand"
-	],
-	"effects": {
-		"minecraft:attributes": [
-			{
-				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:block_interaction_range",
-				"amount": 1.5,
-				"operation": "add_value"
-			},
-			{
-				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:entity_interaction_range",
-				"amount": 1.5,
-				"operation": "add_value"
-			},
-			{
-				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:block_break_speed",
-				"amount": -0.4,
-				"operation": "add_multiplied_total"
-			},
-			{
-				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:attack_speed",
-				"amount": -0.4,
-				"operation": "add_multiplied_total"
-			}
-		]
-	}
+  "description": {
+    "translate": "enchantment.nadir.enlargement_curse",
+    "fallback": "Curse of Enlargement"
+  },
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 8,
+  "slots": ["mainhand"],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "nadir:enchantment.enlargement_curse",
+        "attribute": "minecraft:block_interaction_range",
+        "amount": 1.5,
+        "operation": "add_value"
+      },
+      {
+        "id": "nadir:enchantment.enlargement_curse",
+        "attribute": "minecraft:entity_interaction_range",
+        "amount": 1.5,
+        "operation": "add_value"
+      },
+      {
+        "id": "nadir:enchantment.enlargement_curse",
+        "attribute": "minecraft:block_break_speed",
+        "amount": -0.4,
+        "operation": "add_multiplied_total"
+      },
+      {
+        "id": "nadir:enchantment.enlargement_curse",
+        "attribute": "minecraft:attack_speed",
+        "amount": -0.4,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
 }

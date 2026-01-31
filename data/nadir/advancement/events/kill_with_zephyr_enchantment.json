@@ -17,7 +17,7 @@
 							"predicates": {
 								"minecraft:enchantments": [
 									{
-										"enchantments": "nadir:zephyr"
+										"enchantments": "#nadir:zephyr_check"
 									}
 								]
 							}

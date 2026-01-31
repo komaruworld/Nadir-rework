@@ -8,8 +8,8 @@
       {
         "amount": {
           "type": "minecraft:linear",
-          "base": 4.0,
-          "per_level_above_first": 4.0
+          "base": 5.0,
+          "per_level_above_first": 0.0
         },
         "attribute": "minecraft:submerged_mining_speed",
         "id": "minecraft:enchantment.aqua_affinity",
@@ -26,9 +26,7 @@
     "base": 1,
     "per_level_above_first": 0
   },
-  "slots": [
-    "head"
-  ],
+  "slots": ["head"],
   "supported_items": "#minecraft:enchantable/head_armor",
   "weight": 2
 }

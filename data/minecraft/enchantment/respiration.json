@@ -1,34 +1,32 @@
 {
-	"description": {
-		"translate": "enchantment.minecraft.respiration"
-	},
-	"supported_items": "#nadir:enchantable/head_and_animal",
-	"weight": 2,
-	"max_level": 3,
-	"min_cost": {
-		"base": 10,
-		"per_level_above_first": 10
-	},
-	"max_cost": {
-		"base": 40,
-		"per_level_above_first": 10
-	},
-	"anvil_cost": 4,
-	"slots": [
-		"armor"
-	],
-	"effects": {
-		"minecraft:attributes": [
-			{
-				"id": "minecraft:enchantment.respiration",
-				"attribute": "minecraft:oxygen_bonus",
-				"amount": {
-					"type": "minecraft:linear",
-					"base": 1,
-					"per_level_above_first": 1
-				},
-				"operation": "add_value"
-			}
-		]
-	}
+  "description": {
+    "translate": "enchantment.minecraft.respiration"
+  },
+  "supported_items": "#nadir:enchantable/head_and_animal",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": ["armor"],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "minecraft:enchantment.respiration",
+        "attribute": "minecraft:oxygen_bonus",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 1
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
 }

@@ -1,113 +1,47 @@
 {
-	"description": {
-		"translate": "enchantment.minecraft.blast_protection"
-	},
-	"supported_items": "#nadir:enchantable/armor_and_animal",
-	"weight": 4,
-	"max_level": 4,
-	"min_cost": {
-		"base": 5,
-		"per_level_above_first": 13
-	},
-	"max_cost": {
-		"base": 13,
-		"per_level_above_first": 15
-	},
-	"anvil_cost": 2,
-	"slots": [
-		"armor"
-	],
-	"effects": {
-		"minecraft:attributes": [
-			{
-				"id": "minecraft:enchantment.blast_protection",
-				"attribute": "minecraft:explosion_knockback_resistance",
-				"amount": {
-					"type": "minecraft:linear",
-					"base": 0.05,
-					"per_level_above_first": 0.05
-				},
-				"operation": "add_value"
-			}
-		],
-		"minecraft:damage_protection": [
-			{
-				"effect": {
-					"type": "minecraft:add",
-					"value": {
-						"type": "minecraft:linear",
-						"base": 0.75,
-						"per_level_above_first": 0.75
-					}
-				},
-				"requirements": {
-					"condition": "minecraft:all_of",
-					"terms": [
-						{
-							"condition": "minecraft:inverted",
-							"term": {
-								"condition": "minecraft:entity_properties",
-								"entity": "this",
-								"predicate": {
-									"type": "#nadir:horses"
-								}
-							}
-						},
-						{
-							"condition": "minecraft:damage_source_properties",
-							"predicate": {
-								"tags": [
-									{
-										"id": "minecraft:is_explosion",
-										"expected": true
-									},
-									{
-										"id": "minecraft:bypasses_invulnerability",
-										"expected": false
-									}
-								]
-							}
-						}
-					]
-				}
-			},
-			{
-				"effect": {
-					"type": "minecraft:add",
-					"value": {
-						"type": "minecraft:linear",
-						"base": 3,
-						"per_level_above_first": 3
-					}
-				},
-				"requirements": {
-					"condition": "minecraft:all_of",
-					"terms": [
-						{
-							"condition": "minecraft:entity_properties",
-							"entity": "this",
-							"predicate": {
-								"type": "#nadir:horses"
-							}
-						},
-						{
-							"condition": "minecraft:damage_source_properties",
-							"predicate": {
-								"tags": [
-									{
-										"id": "minecraft:is_explosion",
-										"expected": true
-									},
-									{
-										"id": "minecraft:bypasses_invulnerability",
-										"expected": false
-									}
-								]
-							}
-						}
-					]
-				}
-			}
-		]
-	}
+  "description": {
+    "translate": "enchantment.minecraft.blast_protection"
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 4,
+  "max_level": 4,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 13
+  },
+  "max_cost": {
+    "base": 13,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 2,
+  "slots": ["armor"],
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 0.75,
+            "per_level_above_first": 0.75
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:is_explosion",
+                "expected": true
+              },
+              {
+                "id": "minecraft:bypasses_invulnerability",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
 }

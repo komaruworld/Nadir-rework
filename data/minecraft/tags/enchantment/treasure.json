@@ -18,6 +18,7 @@
 		"nadir:warp",
 		"nadir:step",
 		"nadir:sharpshooter",
-		"nadir:magma_walker"
+		"nadir:magma_walker",
+		"nadir:gravity"
 	]
 }

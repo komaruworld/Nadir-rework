@@ -1,35 +1,33 @@
 {
-	"description": {
-		"translate": "enchantment.nadir.grip",
-		"fallback": "Grip"
-	},
-	"supported_items": "#nadir:enchantable/foot_and_animal",
-	"weight": 5,
-	"max_level": 3,
-	"min_cost": {
-		"base": 6,
-		"per_level_above_first": 17
-	},
-	"max_cost": {
-		"base": 18,
-		"per_level_above_first": 20
-	},
-	"anvil_cost": 2,
-	"slots": [
-		"armor"
-	],
-	"effects": {
-		"minecraft:attributes": [
-			{
-				"id": "nadir:enchantment.grip",
-				"attribute": "minecraft:knockback_resistance",
-				"amount": {
-					"type": "minecraft:linear",
-					"base": 0.15,
-					"per_level_above_first": 0.1
-				},
-				"operation": "add_value"
-			}
-		]
-	}
+  "description": {
+    "translate": "enchantment.nadir.grip",
+    "fallback": "Grip"
+  },
+  "supported_items": "#nadir:enchantable/foot_and_animal",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {
+    "base": 6,
+    "per_level_above_first": 17
+  },
+  "max_cost": {
+    "base": 18,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 2,
+  "slots": ["armor"],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "nadir:enchantment.grip",
+        "attribute": "minecraft:knockback_resistance",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.15,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
 }

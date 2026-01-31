@@ -1,31 +1,33 @@
 {
-	"description": {
-		"translate": "enchantment.nadir.failsafe",
-		"fallback": "Failsafe"
-	},
-	"supported_items": "#minecraft:enchantable/mace",
-	"weight": 2,
-	"max_level": 1,
-	"min_cost": {
-		"base": 30,
-		"per_level_above_first": 0
-	},
-	"max_cost": {
-		"base": 60,
-		"per_level_above_first": 0
-	},
-	"anvil_cost": 8,
-	"slots": [
-		"mainhand"
-	],
-	"effects": {
-		"minecraft:attributes": [
-			{
-				"id": "nadir:enchantment.failsafe",
-				"attribute": "minecraft:fall_damage_multiplier",
-				"amount": -0.33,
-				"operation": "add_multiplied_total"
-			}
-		]
-	}
+  "description": {
+    "translate": "enchantment.nadir.failsafe",
+    "fallback": "Failsafe"
+  },
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 8,
+  "slots": ["armor"],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "nadir:enchantment.failsafe",
+        "attribute": "minecraft:fall_damage_multiplier",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.2,
+          "per_level_above_first": -0.1
+        },
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
 }

@@ -25,9 +25,7 @@
     "base": 1,
     "per_level_above_first": 10
   },
-  "slots": [
-    "mainhand"
-  ],
+  "slots": ["mainhand"],
   "supported_items": "#minecraft:enchantable/mining",
   "weight": 10
 }
