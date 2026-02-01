@@ -2,7 +2,8 @@
 	"anvil_cost": 1,
 	"description": {
 		"translate": "enchantment.nadir.gravity",
-		"fallback": "Gravity"
+		"fallback": "Gravity",
+		"color": "gold"
 	},
 	"effects": {
 		"minecraft:post_attack": [
@@ -184,7 +185,6 @@
 			}
 		]
 	},
-	"exclusive_set": "#minecraft:exclusive_set/crossbow",
 	"max_cost": {
 		"base": 65,
 		"per_level_above_first": 9
