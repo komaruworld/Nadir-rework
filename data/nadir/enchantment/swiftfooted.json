@@ -51,7 +51,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type": "#nadir:horses_and_wolves",
+            "entity_type": "#nadir:horses_and_wolves",
             "movement": {
               "horizontal_speed": {
                 "min": 0.01
@@ -82,7 +82,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type": "minecraft:player",
+            "entity_type": "minecraft:player",
             "flags": {
               "is_sneaking": false,
               "is_sprinting": true,

@@ -1,6 +1,7 @@
 {
 	"pack": {
-		"pack_format": 57,
-		"description": "Переработка и расширение системы зачарований для Minecraft 1.21.10"
+		"description": "Переработка и расширение системы зачарований для Minecraft 26.2",
+		"min_format": [107, 1],
+		"max_format": [107, 1]
 	}
 }

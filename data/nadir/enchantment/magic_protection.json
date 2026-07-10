@@ -38,7 +38,7 @@
 								"condition": "minecraft:entity_properties",
 								"entity": "this",
 								"predicate": {
-									"type": "#nadir:horses"
+									"entity_type": "#nadir:horses"
 								}
 							}
 						},
@@ -76,7 +76,7 @@
 							"condition": "minecraft:entity_properties",
 							"entity": "this",
 							"predicate": {
-								"type": "#nadir:horses"
+								"entity_type": "#nadir:horses"
 							}
 						},
 						{
